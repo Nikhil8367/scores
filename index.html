@@ -219,6 +219,9 @@
           return;
         }
 
+        // ✅ Sort scores by roll number
+        scores.sort((a, b) => a.studentRollNo.localeCompare(b.studentRollNo));
+
         scores.forEach(score => {
           const row = `<tr>
             <td>${score.studentRollNo}</td>
